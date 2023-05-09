@@ -10,8 +10,8 @@ const Cards = ()=> {
                 return <Card
                     id={game.id}
                     name={game.name}
-                    email={game.email}
-                    phone={game.phone}
+                    platforms={game.platforms}
+                    genres={game.genres}
                 />
             })}
         </div>

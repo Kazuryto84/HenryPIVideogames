@@ -5,8 +5,8 @@ const Card = (props)=> {
         <div className={style.card}>
         <p>Id:{props.id}</p>
         <p>Name:{props.name}</p>
-        <p>Email:{props.email}</p>
-        <p>Phone:{props.phone}</p>
+        <p>Platforms:{props.platforms}</p>
+        <p>Genres:{props.genres}</p>
         </div>
     )
 }

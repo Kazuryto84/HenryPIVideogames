@@ -5,6 +5,15 @@ const {newPostGame} = require("../Controllers/newPostGame")
 const {getVideoByName} = require("../Controllers/getGamebyName")
 const gamesRouter = Router()
 
+gamesRouter.get("/all", async (req, res) => {
+    
+    try {
+        const getGames = await getAllGames();
+        res.status(200).json(getGames)
+    } catch (error) {
+        res.status(500).json({error:error.message})
+    }
+} )
 
 gamesRouter.get("/", async (req, res) => {
     const {name} = req.query
